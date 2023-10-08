@@ -3,6 +3,10 @@
 import { useState } from "react";
 import { SearchManufacturer } from ".";
 
+const SearchButton = () => {
+  return <button></button>;
+};
+
 const SearchBar = () => {
   const [manufacturer, setManufacturer] = useState("");
   const handleSearch = () => {};
@@ -13,6 +17,8 @@ const SearchBar = () => {
           manufacturer={manufacturer}
           setManufacturer={setManufacturer}
         />
+
+        <SearchButton />
       </div>
     </form>
   );
